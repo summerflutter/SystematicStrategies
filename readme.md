@@ -1,5 +1,7 @@
 # QuantTrading
 
+> **Status:** Active | Last updated: 2026-06 | Supersedes: [Crypto_Quant_Trading](https://github.com/summerflutter/Crypto_Quant_Trading)
+
 Crypto strategy research and paper trading on Binance spot/perp data.
 
 ## Setup
@@ -53,6 +55,10 @@ Outputs go to `results/*.csv`.
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Folder layout, data flow, scripts, cost model |
 | [STRATEGY_STATUS.md](STRATEGY_STATUS.md) | Active vs frozen strategies, latest backtest gates |
 | [docs/PREDICTIVE_ML.md](docs/PREDICTIVE_ML.md) | Frozen ML direction-forecast module (reference only) |
+| [docs/MIGRATION.md](docs/MIGRATION.md) | Consolidated legacy repos map |
+| [docs/REPO_INVENTORY.md](docs/REPO_INVENTORY.md) | Local/GitHub repo audit and tags |
+| [docs/DATA_PATHS.md](docs/DATA_PATHS.md) | External dataset locations (`~/Data/`) |
+| [legacy/](legacy/) | Migrated forecast code (PriceForecast, orderbook, etc.) |
 
 ## Current focus
 
