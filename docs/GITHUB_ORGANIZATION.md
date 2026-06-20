@@ -1,46 +1,39 @@
 # GitHub organization
 
-Run after `gh auth login`:
+## Priority repos (push after `gh auth login`)
 
 ```bash
-~/Documents/GitHub/QuantTrading/scripts/github_remote_ops.sh
+~/Documents/GitHub/SystematicStrategies/scripts/setup_priority_repos.sh
 ```
+
+This script will:
+
+1. Rename `aSystematicStrategies` → `SystematicStrategies` (and the other three `a*` folders)
+2. Delete GitHub repos: `Crypto_Quant_Trading`, `BTC_price_prediction`
+3. Rename `QuantTrading` → `SystematicStrategies` on GitHub (if it exists)
+4. Create/push: `SystematicStrategies`, `ElectronicMarketMaking`, `HighFreqPriceForecast`, `ReadingNotes`
 
 ## Recommended pinned repos
 
-1. [QuantTrading](https://github.com/summerflutter/QuantTrading) — main research repo
-2. [deepLOB](https://github.com/summerflutter/deepLOB) — order book deep learning
-3. [Time-LLM](https://github.com/summerflutter/Time-LLM) — time-series LLM experiments
+1. [SystematicStrategies](https://github.com/summerflutter/SystematicStrategies)
+2. [HighFreqPriceForecast](https://github.com/summerflutter/HighFreqPriceForecast)
+3. [ElectronicMarketMaking](https://github.com/summerflutter/ElectronicMarketMaking)
 
 Pin at: https://github.com/summerflutter → Customize pins
 
-## Topics (applied by script)
+## Local layout (after script)
 
-| Repo | Topics |
-|------|--------|
-| QuantTrading | `quantitative-finance`, `crypto`, `backtesting`, `stat-arb`, `paper-trading` |
-| deepLOB | `deep-learning`, `orderbook`, `quantitative-finance` |
-| Time-LLM | `time-series`, `llm`, `forecasting` |
-| llmtime | `time-series`, `llm`, `forecasting` |
-
-## Repos to archive (superseded)
-
-- Crypto_Quant_Trading
-- PriceForecast
-- orderbook_forecast
-- flow_rate_estimation
-- intradayVolumeForecast
-
-## Repos to delete (empty/stale)
-
-- Miscellaneous (no commits)
-- rust_tutorial (no commits)
-- LSTM-For-Stock-Market-Prediction (2019 fork, superseded by Stock-Price-Prediction-Using-LSTM)
-
-## Push QuantTrading (first time)
-
-```bash
-cd ~/Documents/GitHub/QuantTrading
-git push -u origin main
-# Or let the script create the repo: scripts/github_remote_ops.sh
 ```
+~/Documents/GitHub/
+├── SystematicStrategies/
+├── ElectronicMarketMaking/
+├── HighFreqPriceForecast/
+├── ReadingNotes/
+├── z_old/                    # local archive only (not on GitHub)
+└── … forks (Time-LLM, etc.)
+```
+
+## Obsolete (deleted from GitHub)
+
+- `Crypto_Quant_Trading` → superseded by SystematicStrategies
+- `BTC_price_prediction` → moved to z_old locally

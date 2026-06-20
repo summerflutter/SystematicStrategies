@@ -1,6 +1,6 @@
-# QuantTrading
+# SystematicStrategies
 
-> **Status:** Active | Last updated: 2026-06 | Supersedes: [Crypto_Quant_Trading](https://github.com/summerflutter/Crypto_Quant_Trading)
+> **Status:** Active | Last updated: 2026-06 | Supersedes Crypto_Quant_Trading (deleted)
 
 Crypto strategy research and paper trading on Binance spot/perp data.
 
